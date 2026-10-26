@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Car Home</string>
+    <string name="all_apps">All apps</string>
+    <string name="not_playing">Not playing</string>
+    <string name="tap_to_open">Tap to open music</string>
+    <string name="bluetooth_audio">Bluetooth audio</string>
+    <string name="from_phone">From your phone</string>
+    <string name="close">Close</string>
+    <string name="map_attribution" translatable="false">© OpenStreetMap contributors · OpenFreeMap · Weather by Open-Meteo</string>
+    <string name="speed_kmh">%d km/h</string>
+    <string name="where_to">Where to?</string>
+    <string name="search_hint">Search a place</string>
+    <string name="search_recent">Recent places</string>
+    <string name="search_typing">Searching…</string>
+    <string name="search_none">No places found</string>
+    <string name="end">End</string>
+    <string name="cancel">Cancel</string>
+    <string name="go">Go</string>
+    <string name="routing">Finding a route…</string>
+    <string name="rerouting">Finding a new route…</string>
+    <string name="arrived">You have arrived</string>
+    <string name="route_summary">%1$s · %2$s · no live traffic</string>
+    <string name="drive_summary">%1$d km/h  ·  %2$s  ·  %3$s  ·  %4$s</string>
+    <string name="route_failed">No route: check the internet connection</string>
+    <string name="search_failed">Search needs internet</string>
+    <string name="cannot_open_app">This app could not be opened</string>
+    <string name="waiting_for_gps">Waiting for GPS…</string>
+    <string name="temperature_c">%d°</string>
+    <color name="prayer_next">#5AA2FF</color>
+    <string name="lyrics_loading">Looking up lyrics…</string>
+    <string name="lyrics_none">No lyrics found</string>
+    <string name="lyrics_earlier">−2s</string>
+    <string name="lyrics_later">+2s</string>
+    <string name="lyrics_timing">Tap the line being sung to sync</string>
+    <color name="lyric_dim">#5A5A5E</color>
+    <string name="previous">Previous</string>
+    <string name="play_pause">Play or pause</string>
+    <string name="next">Next</string>
+
+    <color name="bg">#000000</color>
+    <color name="surface">#1C1C1E</color>
+    <color name="surface_pressed">#3A3A3C</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_dim">#8E8E93</color>
+    <color name="text_soft">#C8CCD6</color>
+
+    <style name="Theme.CarHome" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:colorAccent">@color/text</item>
+    </style>
+</resources>

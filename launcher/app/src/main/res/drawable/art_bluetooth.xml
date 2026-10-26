@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="#5E5CE6" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/g_bluetooth" android:gravity="center" android:width="34dp" android:height="34dp" />
+</layer-list>
