@@ -8,6 +8,11 @@ when you are not touching it. It also does simple turn-by-turn navigation.
 Everything runs over ADB from a computer and needs no root. Nothing on the system partition changes,
 and every step can be undone.
 
+> [!NOTE]
+> This has been tested on one head unit only: an NWD k2001-nwd sold as Brainbox. Head units that look
+> alike often differ in firmware, preinstalled apps and hardware, so parts of this may not work on
+> yours. Check [Supported devices](#supported-devices) before you start.
+
 ## Features
 
 - The map is OpenStreetMap data, drawn on the device in a dark style and cached on disk, so roads you
