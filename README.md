@@ -1,4 +1,4 @@
-# carhome
+# ModernizeHU
 
 A replacement home screen and an ADB debloat for cheap Android 7.1 car head units running NWD
 (Nuoweida) firmware, such as the ones sold in Indonesia under the Brainbox name. Home is a dark map
