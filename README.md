@@ -105,6 +105,23 @@ To switch back to the stock home screen only:
 adb shell cmd package set-home-activity com.android.launcher/com.android.launcher2.Launcher
 ```
 
+## Using an AI agent
+
+[`AGENTS.md`](AGENTS.md) holds the rules an AI coding agent must follow on a head unit: the backup to
+take first, what it may disable, and what it must never touch. Cursor and Codex read it automatically;
+with other agents, start by asking them to read it.
+
+Some prompts to start from:
+
+- "My head unit is at 192.168.1.50 and USB debugging is on. Read AGENTS.md, check whether my unit is
+  supported and back it up. Don't change anything yet."
+- "Suggest a debloat list for my unit. Explain each app and wait for my approval before disabling
+  anything."
+- "Build and install the launcher, with Waze, Spotify, Phone and Settings in the dock."
+- "Undo everything you changed on the head unit."
+
+Stay with the agent while it works and approve each change yourself.
+
 ## Debloat rules
 
 - Apps are disabled with `pm disable-user`, never uninstalled.
