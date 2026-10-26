@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_preview"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="22dp"
+    android:background="@drawable/banner_bg"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/preview_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/preview_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#C8CCD6"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/preview_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/end_button"
+            android:gravity="center"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:text="@string/cancel"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/preview_go"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/go_button"
+            android:gravity="center"
+            android:paddingStart="34dp"
+            android:paddingEnd="34dp"
+            android:text="@string/go"
+            android:textColor="@color/text"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
