@@ -1,0 +1,32 @@
+# Brainbox head unit: NWD (Nuoweida) QUAD-CORE T3 k2001-nwd, Allwinner T3, 2 GB, 1024x600,
+# Android 7.1.1 (SDK 25), firmware K2001N_MCX_S212B15.20220228.145840.
+# Stock launcher: com.android.launcher/com.android.launcher2.Launcher (kept enabled).
+#
+# Apply:  HU_HOST=<ip> scripts/disable.sh debloat.txt
+# Undo:   HU_HOST=<ip> scripts/restore.sh debloat.txt
+#
+# Firmware re-enables com.didi365.miudrive.navi at every boot; it stays listed so restore knows it.
+# Network ADB comes up "offline" after a boot: toggle USB debugging off and on to reconnect.
+#
+# Already disabled before this debloat (left as found): com.txznet.aipal (TXZ voice assistant),
+# com.zjinnova.zlink (ZLink wireless CarPlay / Android Auto, v5.2.14; starts without activation errors
+# if re-enabled with pm enable).
+
+# Batch 1: NWD ad and store services
+com.nwd.carad.service          # ad service: boot, ACTION_SHOW_AD_ACCON, location, overlay
+com.nwd.carstore.service       # app store service: boot, network change, location, overlay
+
+# Batch 2: not used (owner's choice)
+com.android.chrome
+com.nwd.radio                  # FM/AM radio UI; com.nwd.radio.service is kept
+com.nwd.android.music.ui       # built-in USB music player
+com.nwd.android.video.ui       # built-in USB video player
+com.didi365.miudrive.navi      # phone screen mirroring (Lebo/hpplay cast SDK), microphone access
+com.android.setting.gps.monitor
+
+# Kept on purpose: com.nwd.backcar (reversing camera), com.nwd.can.* (CAN bus), com.nwd.kernel*,
+# com.nwd.setting.service, com.nwd.radio.service, com.nwd.audioset (DSP), com.bt.bc03 and
+# com.nwd.android.phone (Bluetooth, hands-free), com.nwd.bt.music, com.nwd.auxin, com.nwd.media.scanner,
+# com.nwd.guidebookskin (home media UI), com.nwd.mycar, com.nwd.filemanager,
+# com.nwd.factory.setting and com.nwd.whole.machine (factory tools: never launched),
+# Maps, Spotify, YouTube, Gboard, Play Store, Play Services.

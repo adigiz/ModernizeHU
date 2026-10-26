@@ -1,0 +1,8 @@
+backup/
+shots/
+work/
+*.apk
+build/
+.gradle/
+local.properties
+record/
