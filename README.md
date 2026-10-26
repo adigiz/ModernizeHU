@@ -8,6 +8,10 @@ when you are not touching it. It also does simple turn-by-turn navigation.
 Everything runs over ADB from a computer and needs no root. Nothing on the system partition changes,
 and every step can be undone.
 
+| Before: the stock Brainbox home | After |
+|---|---|
+| ![Stock Brainbox home screen](docs/before.png) | ![ModernizeHU home screen](docs/after.png) |
+
 > [!NOTE]
 > This has been tested on one head unit only: an NWD k2001-nwd sold as Brainbox. Head units that look
 > alike often differ in firmware, preinstalled apps and hardware, so parts of this may not work on
@@ -29,6 +33,13 @@ and every step can be undone.
 - Bluetooth music starts without opening NWD's player, whose Back key stops the music.
 - The app dock fades after 10 seconds; tap the map to bring it back. All apps opens over the map.
 - `debloat.txt` disables NWD's ad and app-store services and apps the owner did not use.
+
+| Route preview | Navigating | Now Playing |
+|---|---|---|
+| ![Route preview to Monas](docs/route-preview.png) | ![Navigating with the next turn](docs/navigation.png) | ![Now Playing with synced lyrics](docs/now-playing.png) |
+
+The before and Now Playing screenshots are from the tested head unit. The map screens are from the
+emulator with a mock location in central Jakarta.
 
 ## Supported devices
 
